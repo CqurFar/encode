@@ -1,0 +1,46 @@
+-- потоки=32, тактики=стандарт
+
+6.27 = use_cuda_graph=True
+
+6.28 = use_cuda_graph=True, tilesize=[640, 360], overlap=0
+3.30 = use_cuda_graph=True, tilesize=[640, 360], overlap=8
+3.32 = use_cuda_graph=True, tilesize=[640, 360], overlap=32
+
+
+7.64 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=2
+7.46 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=4
+6.90 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=32
+
+
+-- потоки=2, тактики=все
+7.62 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=2
+
+убрал --noTF32
+7.60 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=2
+
+-- воркспейс = 16384
+7.64 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=2
+
+-- воркспейс = 128
+7.63 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=2
+
+?? по воркспецс
+
+убрал --heuristic --useManagedMemory --useSpinWait --threads (повлияет лт на загрузгу гпу и цпу?)
+7.58 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=2
+
+1x3x180x320 (смотря какая модель как я понял если x2up то разешение выше в 2 раза)
+7.42 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=2
+
+1x3x1080x1920
+7.61 = use_cuda_graph=True, tilesize=[640, 360], overlap=0, num_streams=2
+
+с мин и макс шейпами (64x64 до фхд) --best исключить иначе нет эффекта
+5.50 = use_cuda_graph=True, tilesize=[64, 64], overlap=0, num_streams=2
+9.98 = use_cuda_graph=True, tilesize=[1920, 1080], overlap=0, num_streams=2
+
+убрал оптимальные --optShapes=input:1x3x360x640, оставил мин и макс 
+на fp-16
+10.18 = use_cuda_graph=True, tilesize=[1920, 1080], overlap=0, num_streams=2
+без fp16
+7.66 = use_cuda_graph=True, tilesize=[1920, 1080], overlap=0, num_streams=2

@@ -1,0 +1,6 @@
+
+"C:\Users\Art\Downloads\Eac3to\Проги\VapourSynth\core\vspipe.exe" -y 02.vpy - | "C:\Users\Art\Downloads\Eac3to\Проги\x265\x265-x64-v3.5+20-aMod-gcc10.2.1-opt-skylake.exe" --frame-threads 5 --numa-pools 4 --log-level 3 --input-csp 1 --input-res 1920x1080 --level-idc 40 --ref 5 --min-keyint 24 --keyint 240 --bframes 7 --b-adapt 2 --b-pyramid --bframe-bias 3 --rc-lookahead 20 --lookahead-slices 6 --scenecut 40 --ctu 64 --min-cu-size 8 --max-tu-size 32 --tu-inter-depth 2 --tu-intra-depth 2 --max-merge 3 --limit-refs 1 --me 1 --subme 2 --merange 64 --temporal-mvp --rd 3 --selective-sao 4 --early-skip --rskip 0 --no-tskip --psy-rd 2.00 --psy-rdoq 0.00 --cbqpoffs -2 --crqpoffs -2 --crf 15.0 --qcomp 0.50 --qpstep 10 --vbv-maxrate 30000 --vbv-bufsize 30000 --vbv-init 0.5 --ipratio 1.50 --pbratio 1.40 --aq-mode 2 --aq-strength 2.40 --cutree --qg-size 32 --qpmax 69 --qpmin 0 --sar 1:1 --videoformat 5 --colorprim bt709 --transfer bt709 --colormatrix bt709 --min-luma 0 --max-luma 1024 --slices 1 --scenecut-bias 0.05 --no-aq-motion --analysis-reuse-level 5 --max-ausize-factor 1.0 --qp-adaptation-range 2.00 --deblock 1:-1 --output "E:\Работа\[Zagzad] Given-Movie (BDRip 1920x1080 HEVC-10bit THD)\Specials\Special Thematic Сlip\01.hevc" --y4m - (смотрим)
+
+encoded 85288 frames in 9:35:37.90 (2.47 fps), 5285.54 kb/s, Avg QP:18.80
+
+

@@ -1,0 +1,5 @@
+@echo off
+FOR %%I IN (01 02 03 04 05 06 6.5 07 08 09 10 11 12 13 SP) DO (
+"C:\Users\Art\Downloads\Progi\All\Encode\VapourSynth\core\vspipe.exe" -y %%I.vpy - | "C:\Users\Art\Downloads\Progi\All\Encode\x265\x265-x64-v3.5+20-aMod-gcc10.3.0-opt-znver3.exe" --cutree --pme --pmode -F 16 --qp-adaptation-range 2 --open-gop --cbqpoffs -2 --crqpoffs -2 --no-early-skip --rskip 1 --keyint 240 --ref 4 --bframes 8 --ctu 32 --max-tu-size 16 --b-pyramid --b-adapt 2 --no-sao --no-sao-non-deblock --aq-mode 3 --no-strong-intra-smoothing --aq-strength 1.02 --deblock 1:-1 --tu-intra-depth 2 --refine-intra 4 --dynamic-refine --tu-inter-depth 2 --me 3 --wpp --subme 7 --crf 15 --b-pyramid --weightp --weightb --rd 5 --rdoq-level 2 --psy-rdoq 2  --refine-mv 3 --analyze-src-pics --temporal-mvp --max-merge 5 --qcomp 0.72 --info --colorprim bt709 --transfer bt709 --colormatrix bt709 --output "%%I.hevc" --y4m -
+)
+pause

@@ -1,0 +1,3 @@
+* text=auto
+**/*.vpy linguist-language=Python
+*.bat linguist-language=Batch

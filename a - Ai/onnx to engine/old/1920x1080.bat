@@ -1,0 +1,1 @@
+C:\Users\Art\Downloads\Progi\All\Encode\VapourSynth\core\plugins\vsmlrt-cuda\trtexec.exe --onnx=1x_Alias_200000_G.onnx --minShapes=input:1x3x64x64 --optShapes=input:1x3x480x480 --maxShapes=input:1x3x1080x1920 --saveEngine=1x_Alias_200000_G.engine --tacticSources=+CUDNN,-CUBLAS,-CUBLAS_LT --fp16 --noTF32 --workspace=1024 --useCudaGraph --streams=32 --verbose

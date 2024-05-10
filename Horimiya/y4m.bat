@@ -1,0 +1,1 @@
+"C:\Users\Art\Downloads\Progi\All\Encode\VapourSynth\core\vspipe.exe" -p -y NCOP.vpy NCOP.y4m

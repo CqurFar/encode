@@ -1,0 +1,1 @@
+C:\Users\Art\Downloads\Progi\All\Encode\VapourSynth\core\plugins\vsmlrt-cuda\trtexec.exe --onnx=2x_Ani4K_Compact_35000.onnx --minShapes=input:1x3x64x64 --maxShapes=input:1x3x1080x1920 --saveEngine=2x_Ani4K_Compact_35000_new.engine --tacticSources=+CUDNN,-CUBLAS,-CUBLAS_LT --fp16 --noTF32 --workspace=8192 --useCudaGraph --streams=32 --verbose --noDataTransfers --heuristic
