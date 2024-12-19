@@ -1,0 +1,1 @@
+"C:\Users\Art\Downloads\Progi\All\Encode\VapourSynth\core\vspipe.exe" -p -y 03.vpy 03.y4m
